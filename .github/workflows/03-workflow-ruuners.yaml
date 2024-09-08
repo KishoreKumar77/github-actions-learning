@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Show OS
         run: echo "This Job was executed on ${{ runner.os }}"
+
+  windows-echo:
+    runs-on: windows-latest
+    steps:
+      name: Show OS
+      run: echo " This job was executed on ${{ runner.os }}"
